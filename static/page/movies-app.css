@@ -1,0 +1,119 @@
+body,
+html {
+    position: relative;
+    height: 100%;
+}
+
+.swiper-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.swiper-content .inner {
+    padding: 20px 70px;
+    margin-top: 35rem;
+}
+
+.swiper-content h1 {
+    margin: 0 0 15px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.swiper-content .movie-pic {
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #000;
+    width: 110px;
+    height: auto;
+}
+
+.swiper-content .movie-text {
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+}
+
+.swiper-nav {
+    height: 195px;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+}
+
+.swiper-nav:after {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 113px;
+    left: 0;
+    right: 0;
+}
+
+.swiper-nav .swiper-slide {
+    width: 150px;
+    height: 165px;
+    text-align: center;
+    position: relative;
+}
+
+.swiper-nav .swiper-slide,
+.swiper-nav .angle {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+.swiper-nav .angle {
+    width: 18px;
+    height: 18px;
+    background: url(../images/circle.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.swiper-navs {
+    height: 0
+}
+
+.swiper-nav .active-nav {}
+
+.swiper-nav .active-nav .angle {
+    background: url(../images/circle-bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.swiper-nav .swiper-wrapper {
+    margin: 0 auto;
+}
+
+.swiper-nav img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.swiper-nav .title {
+    margin: 0 5px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
